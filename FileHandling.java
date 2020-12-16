@@ -39,7 +39,7 @@ public class FileHandling {
 		FileOutputStream fout = new FileOutputStream("songnames.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fout);
 		for (Song s: songsAL) {
-			oos.writeObject(s.songName);
+			oos.writeObject(s.getSongName());
 		}
 		oos.close();
 	} 
